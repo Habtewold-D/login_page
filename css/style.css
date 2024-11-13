@@ -78,3 +78,6 @@ p ,a , label{
 span{
     visibility: hidden;
 }
+#registration-page{
+    display: none;
+}

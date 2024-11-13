@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <div class="wrapper">
+    <div class="wrapper" id="login-page">
         <div class="title">Login Form</div>
         <form action="#">
             <div class="row">
@@ -25,15 +25,16 @@
                 <input type="submit" value="Login">
             </div>
             <div class="signup">
-                <p>Not a member? <a href="#">sign-up now?</a></p>
+                <p onclick="showRegistrationPage(event)">Not a member? <a href="#">sign-up now?</a></p>
             </div>
+            
         </form>
             
         </div>
-    </div> -->
+    </div>
 
 
-    <div class="wrapper">
+    <div class="wrapper" id="registration-page">
         <div class="title">Registration Form</div>
         <form action="#">
             <span id="error-display" class="err"></span>
@@ -69,7 +70,7 @@
                 <input type="submit" value="Submit" onclick="return validateForm()">
             </div>
             <div class="signup">
-                <p>Have an account <a href="#">sign-in now?</a></p>
+                <p onclick="showLoginPage(event)">Have an account <a href="#">sign-in now?</a></p>
             </div>
         </form>
             

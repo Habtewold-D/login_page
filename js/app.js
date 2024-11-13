@@ -104,3 +104,18 @@ function validateForm() {
     return true;
 }
 
+
+let loginPage = document.getElementById("login-page");
+let registrationPage = document.getElementById("registration-page");
+
+function showRegistrationPage(event) {
+    event.preventDefault(); 
+    registrationPage.style.display = "block";
+    loginPage.style.display = "none";
+}
+
+function showLoginPage(event) {
+    event.preventDefault();
+    registrationPage.style.display = "none";
+    loginPage.style.display = "block";
+ }
