@@ -101,6 +101,7 @@ function validateForm() {
         }, 3000);
         return false; 
     }
+    openPopup();
     return true;
 }
 
@@ -119,3 +120,14 @@ function showLoginPage(event) {
     registrationPage.style.display = "none";
     loginPage.style.display = "block";
  }
+
+ let Popup = document.getElementById("popup");
+
+  function openPopup(){
+    Popup.classList.add("open-popup");
+    registrationPage.style.display = "none";
+    loginPage.style.display = "none";
+  }
+  function closePopup(){
+    Popup.classList.remove("open-popup")
+  }
